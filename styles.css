@@ -1,0 +1,337 @@
+@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: rgba(122, 191, 191, 0.5);
+}
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+h1, h2, h3, nav a, nav span, menu li, #social li, footer {
+    font-family: 'Bebas Neue', cursive;
+}
+p, dd, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+nav a, nav span, menu li, #social li, footer {
+    font-size: 20px;
+}
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+/* HEADER */
+header {
+    margin-top: 230px;
+    padding-top: 10px;
+}
+header img {
+    width: 100%;
+}
+header p {
+    padding: 0px 10px 0px 10px;
+    line-height: 2em;
+}
+
+/* SIDE BUTTONS */
+.menu {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr 1fr;
+}
+menu {
+    background-color: #ffffff;
+    border-color: #EB5428;
+    border-style: solid;
+    border-width: 2px;
+    list-style: none;
+    text-align: center;
+    padding-top: 50px;
+}
+button {
+    border-style: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+menu li {
+    color:#EB5428;
+    font-size: x-large;
+    padding-bottom: 25px;
+}
+menu > li:last-child {
+    padding-left: 15px;
+}
+#jump {
+    padding-right: 20px;
+}
+menu span {
+    visibility: hidden;
+}
+.tacos {
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+
+/* DETAILS PANEL */
+.details {
+    background-color: #0d0d0d;
+    color:#7ABFBF;
+    text-align: center;
+}
+.details h2 {
+    letter-spacing: 2px;
+    padding-top: 5px;
+}
+#details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 10px 80px;
+}
+
+
+/* HOW TO MAKE TACOS */
+.making {
+    display: grid;
+    grid-template-columns: auto 78%;
+}
+.making h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#ingredients {
+    width: 100%;
+    margin-left: 25px;
+}
+#ingredients h2 {
+    padding-left: 15px;
+}
+#directions {
+    padding-right: 25px;
+}
+#directions h2 {
+    text-align: center;
+}
+#directions li {
+    line-height: 1.7;
+}
+
+
+/* NEED SOME SIDES */
+.sides {
+    background-color: #7ABFBF;
+    padding: 0 40px 20px 40px;
+}
+.sides h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+#listings {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+#listings h3 {
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+#listings dl {
+    padding-left: 10px;
+}
+#listings dd {
+    padding-top: 5px;
+}
+#listings dt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+/* MAIN NAV */
+#burger {
+    visibility: hidden;
+}
+.main-nav ul {
+    display: grid;
+    grid-template-columns: 130px 1fr 200px;
+    top: 0;
+    position: absolute;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color:#ffffff;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 1280px;
+}
+.main-nav li {
+    list-style: none;
+}
+.main-nav img {
+    width: 50%;
+    padding-top: 15px;
+}
+#user {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+#user a {
+    color:#0d0d0d;
+    text-decoration: none;
+}
+#user li {
+    padding-top: 20px;
+c
+}
+#user li:hover {
+    transition: background-color 0.75s ease-in-out;
+    background-color:#EB5428;
+}
+#user a:hover {
+    transition: color 0.75s ease-in-out;
+    color: #ffffff;
+}
+#user svg:hover {
+    transition: stroke 0.75s ease-in-out;
+    stroke: #ffffff;
+}
+#icons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+#icons a {
+    color: #EB5428;
+    text-decoration: none;
+}
+#icons a:hover {
+    transition: color 0.75s ease-in-out; 
+    color: #ffffff;
+}
+#icons li:hover {
+    background-color: #EB5428;
+    transition: background-color 0.75s ease-in-out; 
+}
+#home li {
+    background-color: #EB5428;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+#home svg {
+    background-color: #EB5428;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#home span {
+    visibility: hidden;
+}
+
+
+/* SEARCH BAR */
+.search {
+    min-width: 1280px;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    background-color:#F2F2F2;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#search-bar input[type="search"] {
+    border: 2px solid #EB5428;
+    width: 350px;
+    padding: 11px;
+}
+form button[type="submit"] {
+    background-color: #EB5428;
+    border: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* SOCIAL HANDLES */
+.social-media {
+    float: right;
+    text-align: center;
+    width: 50%;
+}
+#social ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+#social li {
+    list-style: none;
+}
+#social a {
+    text-decoration: none;
+    color: #EB5428;
+}
+
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: 40% 25%;
+    padding-bottom: 30px;
+    width: 50%;
+    text-align: center;
+}
+footer img{
+    width: 100%;
+    margin-left: 15px;
+}
+
+
+@media screen and (min-width: 768px) {
+    /* HEADER */
+    
+
+    /* SIDE BUTTONS */
+
+    /* HOW TO MAKE TACOS */
+
+    /* NEED SOME SIDES */
+
+    /* MAIN NAV */
+
+    /* SEARCH BAR */
+
+    /* SOCIAL HANDLES */
+
+    /* FOOTER */
+}
